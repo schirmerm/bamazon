@@ -45,6 +45,7 @@ db.query('SELECT * FROM `products`', (err, data) => {
                         console.log(`Congratulations your order has been placed`)
                         let remaining_inventory = data[0].stock_quantity - quantity
                         db.query(`UPDATE products SET stock_quantity = ${remaining_inventory} WHERE item_id = 1 `)
+                        console.log(`Your total cost is $ ${data[0].price * quantity}`)
 
                     } else {
                         console.log(`Sorry we have insufficient quantity of that item we only have ${data[0].stock_quantity}`)
@@ -59,6 +60,7 @@ db.query('SELECT * FROM `products`', (err, data) => {
                         console.log(`Congratulations your order has been placed`)
                         let remaining_inventory = data[1].stock_quantity - quantity
                         db.query(`UPDATE products SET stock_quantity = ${remaining_inventory} WHERE item_id = 2 `)
+                        console.log(`Your total cost is $ ${data[1].price * quantity}`)
 
                     } else {
                         console.log(`Sorry we have insufficient quantity of that item we only have ${data[1].stock_quantity}`)
@@ -73,6 +75,7 @@ db.query('SELECT * FROM `products`', (err, data) => {
                         console.log(`Congratulations your order has been placed`)
                         let remaining_inventory = data[2].stock_quantity - quantity
                         db.query(`UPDATE products SET stock_quantity = ${remaining_inventory} WHERE item_id = 3 `)
+                        console.log(`Your total cost is $ ${data[2].price * quantity}`)
 
                     } else {
                         console.log(`Sorry we have insufficient quantity of that item we only have ${data[2].stock_quantity}`)
@@ -85,6 +88,7 @@ db.query('SELECT * FROM `products`', (err, data) => {
                         console.log(`Congratulations your order has been placed`)
                         let remaining_inventory = data[3].stock_quantity - quantity
                         db.query(`UPDATE products SET stock_quantity = ${remaining_inventory} WHERE item_id = 4 `)
+                        console.log(`Your total cost is $ ${data[3].price * quantity}`)
 
                     } else {
                         console.log(`Sorry we have insufficient quantity of that item we only have ${data[3].stock_quantity}`)
@@ -97,6 +101,7 @@ db.query('SELECT * FROM `products`', (err, data) => {
                         console.log(`Congratulations your order has been placed`)
                         let remaining_inventory = data[4].stock_quantity - quantity
                         db.query(`UPDATE products SET stock_quantity = ${remaining_inventory} WHERE item_id = 5 `)
+                        console.log(`Your total cost is $ ${data[4].price * quantity}`)
 
                     } else {
                         console.log(`Sorry we have insufficient quantity of that item we only have ${data[4].stock_quantity}`)
@@ -109,6 +114,7 @@ db.query('SELECT * FROM `products`', (err, data) => {
                         console.log(`Congratulations your order has been placed`)
                         let remaining_inventory = data[5].stock_quantity - quantity
                         db.query(`UPDATE products SET stock_quantity = ${remaining_inventory} WHERE item_id = 6 `)
+                        console.log(`Your total cost is $ ${data[5].price * quantity}`)
 
                     } else {
                         console.log(`Sorry we have insufficient quantity of that item we only have ${data[5].stock_quantity}`)
@@ -121,6 +127,7 @@ db.query('SELECT * FROM `products`', (err, data) => {
                         console.log(`Congratulations your order has been placed`)
                         let remaining_inventory = data[6].stock_quantity - quantity
                         db.query(`UPDATE products SET stock_quantity = ${remaining_inventory} WHERE item_id = 7 `)
+                        console.log(`Your total cost is $ ${data[6].price * quantity}`)
 
                     } else {
                         console.log(`Sorry we have insufficient quantity of that item we only have ${data[6].stock_quantity}`)
@@ -133,6 +140,7 @@ db.query('SELECT * FROM `products`', (err, data) => {
                         console.log(`Congratulations your order has been placed`)
                         let remaining_inventory = data[7].stock_quantity - quantity
                         db.query(`UPDATE products SET stock_quantity = ${remaining_inventory} WHERE item_id = 8 `)
+                        console.log(`Your total cost is $ ${data[7].price * quantity}`)
 
                     } else {
                         console.log(`Sorry we have insufficient quantity of that item we only have ${data[7].stock_quantity}`)
@@ -145,6 +153,7 @@ db.query('SELECT * FROM `products`', (err, data) => {
                         console.log(`Congratulations your order has been placed`)
                         let remaining_inventory = data[8].stock_quantity - quantity
                         db.query(`UPDATE products SET stock_quantity = ${remaining_inventory} WHERE item_id = 9 `)
+                        console.log(`Your total cost is $ ${data[8].price * quantity}`)
 
                     } else {
                         console.log(`Sorry we have insufficient quantity of that item we only have ${data[8].stock_quantity}`)
@@ -157,6 +166,7 @@ db.query('SELECT * FROM `products`', (err, data) => {
                         console.log(`Congratulations your order has been placed`)
                         let remaining_inventory = data[9].stock_quantity - quantity
                         db.query(`UPDATE products SET stock_quantity = ${remaining_inventory} WHERE item_id = 10 `)
+                        console.log(`Your total cost is $ ${data[9].price * quantity}`)
 
                     } else {
                         console.log(`Sorry we have insufficient quantity of that item we only have ${data[9].stock_quantity}`)
